@@ -9,24 +9,49 @@
 </head>
 
 <body>
-	<div class="container"><!--introduction-->
-		<img class="floater mugshot" src="images/Mugshot.png" alt="Mugshot">
-		<p>Daniel Ploug Hall</p>
-		<p>Professional interests</p>
-		<p>Personal Interest</p>
+	<header>Pizza</header>
+	<div class="container">
+		<div class="flex-container">
+			<div class="flex-left">
+				<img class="mugshot circle" width="300px" src="images/Mugshot.png" alt="Mugshot">
+			</div>
+			<div class="flex-right">
+				<h1 class="text-center">Daniel Ploug Hall</h1>
+				<p class="text-center lead">Backend developer</p>
+				<p class="text-center lead">About me</p>
+				<p class="text-center lead">Professional interests</p>
+				<hr>
+				<p class="text-center lead">Personal Interest</p>
+				<hr>
+			</div>
+		</div>
 	</div>
-	<br class="clear">
-	<div class="container"> <!--Skills-->
-		<h1>Skills</h1>
+	<div class="grey-bg">
+		<div class="container">
+			<h1 class="section">Projects</h1>
+			<details>
+				<summary>DiceStatistics: a dice statisical libarary</summary>
+				<p>This is project 1</p>
+			</details>
+			<details>
+				<summary>PyToTex: A python data to LaTeX table converter</summary>
+				<p>This is project 1</p>
+			</details>
+			<details>
+				<summary>Simple rastorizor</summary>
+				<p>This is project 1</p>
+			</details>
+			<details>
+				<summary>PyPreCore</summary>
+				<p>This is project 1</p>
+			</details>
+		</div>
+	</div>
+	<div class="container">
+		<h1 class="section">Skills</h1>
 		<ul>
 			<li>
 				<p><b>Languages:</b> Python, C (GCC), C++ (GCC), SQL</p>
-			</li>
-			<li>
-				<p><b>Python Libaries:</b>Numpy, Scipy, Matplotlib</p>
-			</li>
-			<li>
-				<p><b>Parallel interfaces:</b> OpenMP, MPI</p>
 			</li>
 			<li>
 				<p><b>Databases:</b> Postgres, Oracle</p>
@@ -35,24 +60,26 @@
 				<p><b>Version Control:</b> Git, TortoiseSVN</p>
 			</li>
 			<li>
-				<p><b>Technologies:</b> Make, CMake</p>
+				<p><b>Tools:</b> Make, CMake</p>
 			</li>
 			<li>
-				<p><b>Data science:</b> Curve fitting, Data visualization</p>
+				<p><b>Python Libaries: </b>Psycopg3, OracleDB, Requests, Numpy, Scipy, Matplotlib,
+					Seaborn, Pandas,
+				</p>
+			</li>
+			<li>
+				<p><b>Data science:</b> Curve fitting, Data visualization, Data analysis</p>
+			</li>
+			<li>
+				<p><b>Parallel interfaces:</b> OpenMP, MPI</p>
 			</li>
 			<li>
 				<p><b>Numerical methods:</b> Finite
-					volume method, Finite difference method, Numerical optimization</p>
+					volume method, Finite difference method, Numerical optimization, Leapfrog
+					integration, Gaussian Quadature</p>
 			</li>
 		</ul>
 	</div>
-	<div class="projects"><!--projects-->
-		<h1>Projects</h1>
-		<div class="collapseable">
-			<p>Project 1</p>
-		</div>
-	</div>
-
 </body>
 
 </html>
