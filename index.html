@@ -11,18 +11,38 @@
 <body>
 	<header>Pizza</header>
 	<div class="container">
-		<div class="flex-container">
+		<div class="flex-container-screen">
 			<div class="flex-left">
-				<img class="mugshot circle" width="300px" src="images/Mugshot.png" alt="Mugshot">
+				<img class="circle" id="mugshot" width="300px" src="images/Mugshot.png" alt="Mugshot">
 			</div>
 			<div class="flex-right">
-				<h1 class="text-center">Daniel Ploug Hall</h1>
+				<h1 class="text-center" id="Name">Daniel Ploug Hall</h1>
 				<p class="text-center lead">Backend developer</p>
-				<p class="text-center lead">About me</p>
-				<p class="text-center lead">Professional interests</p>
+				<p class="lead">About me</p>
 				<hr>
-				<p class="text-center lead">Personal Interest</p>
+				<p class="lead">Professional interests</p>
 				<hr>
+				<p class="lead">Personal Interest</p>
+				<hr>
+				<div class="flex-container">
+					<div class="col text-center">
+						<a class="logo" href="mailto:danielploug@hotmail.com" target="_blank">
+							<img class="logo" src="icons/mail.ico" alt="Email">
+						</a>
+					</div>
+					<div class="col text-center">
+						<a class="logo" href="https://github.com/daplhall" target="_blank">
+							<img class="logo" src="icons/github.ico" alt="Email">
+						</a>
+					</div>
+					<div class="col text-center">
+						<a class="logo"
+							href="https://www.linkedin.com/in/daniel-ploug-hall-a960b1217/"
+							target="_blank">
+							<img class="logo" src="icons/Linkedin.ico" alt="Email">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -30,8 +50,11 @@
 		<div class="container">
 			<h1 class="section">Projects</h1>
 			<details>
-				<summary>DiceStatistics: a dice statisical libarary</summary>
-				<p>This is project 1</p>
+				<summary class="header">DiceStatistics: a dice statisical libarary</summary>
+				<frameset>
+
+				</frameset>
+				<frame name="test" src="project1.html"></frame>
 			</details>
 			<details>
 				<summary>PyToTex: A python data to LaTeX table converter</summary>
@@ -48,7 +71,7 @@
 		</div>
 	</div>
 	<div class="container">
-		<h1 class="section">Skills</h1>
+		<h1 class="section">Competencies</h1>
 		<ul>
 			<li>
 				<p><b>Languages:</b> Python, C (GCC), C++ (GCC), SQL</p>
