@@ -66,30 +66,27 @@ details[open] {
 }
 */
 details .content {
-	margin: 0 16px;
-	margin-left: 16px;
+	margin-left: 10px;
 	padding-top: 12px;
-	border: 4px solid #b2b2b2;
-	background-color: #eeeeee;
+	padding-left: 12px;
+	border: 4px solid #c9c9c9;
+	background-color: #f3f3f3;
 	box-shadow: 0 8px 6px -6px #dbdbdb;
-	border-bottom-left-radius: 1em;
+	border-bottom-left-radius: 0.7em;
+	position: relative;
+	top: -4px;
 }
 
 summary {
-	background: #b2b2b2;
-	border-top-left-radius: 1em;
-	border-bottom-left-radius: 1em;
+	background: #c9c9c9;
+	border-top-left-radius: 0.3em;
+	border-top-right-radius: 0.3em;
+	border-bottom-left-radius: 0.5em;
 	padding: 8px;
 	font-weight: 900;
 	cursor: pointer;
 	outline: 5px;
 	box-shadow: 0 8px 6px -6px #dbdbdb;
-}
-
-summary::before {
-	font-size: 20px;
-	font-weight: 900;
-	transform: translate(0, -50%);
 }
 
 img.logo {
