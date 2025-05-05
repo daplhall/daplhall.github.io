@@ -28,12 +28,34 @@ hr {
 	opacity: .60;
 }
 
-details {
-	padding: 10px;
-	border-radius: 3px;
-	border-radius: 5px;
+nav {
+	background-color: #262626;
+	background-color: #f1f1f1;
+	position: sticky;
+	top: 0;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	z-index: 1;
 }
 
+nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+details {
+	padding: 10px;
+}
+
+/*
 details:hover,
 details:focus {
 	background: #d4d1ec;
@@ -41,6 +63,33 @@ details:focus {
 
 details[open] {
 	background: #d4d1ec;
+}
+*/
+details .content {
+	margin: 0 16px;
+	margin-left: 16px;
+	padding-top: 12px;
+	border: 4px solid #b2b2b2;
+	background-color: #eeeeee;
+	box-shadow: 0 8px 6px -6px #dbdbdb;
+	border-bottom-left-radius: 1em;
+}
+
+summary {
+	background: #b2b2b2;
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+	padding: 8px;
+	font-weight: 900;
+	cursor: pointer;
+	outline: 5px;
+	box-shadow: 0 8px 6px -6px #dbdbdb;
+}
+
+summary::before {
+	font-size: 20px;
+	font-weight: 900;
+	transform: translate(0, -50%);
 }
 
 img.logo {
@@ -68,16 +117,25 @@ a.nav-link:visited {
 	color: #555;
 }
 
-#mugshot {
-	margin-right: auto !important;
-	margin-left: auto !important;
-	display: block;
+p.bottom-margin-5 {
+	margin-bottom: 5px;
 }
+
+p.contact-info {
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
 
 #Name {
 	font-weight: 300;
 	font-size: 3.5em;
 	line-height: 1.2;
+}
+
+#nav-bar {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 
@@ -114,14 +172,6 @@ a.nav-link:visited {
 	background-color: #f3f3f3;
 }
 
-.header {
-	/* makes stuff stay */
-	position: sticky;
-	top: 0;
-	padding: 10px 16px;
-	background: #555;
-	color: #f1f1f1;
-}
 
 .col {
 	flex: 1 0 0%;
@@ -129,6 +179,10 @@ a.nav-link:visited {
 
 .flex-container {
 	display: flex;
+}
+
+.full-screen {
+	margin: 0 0 0 0;
 }
 
 
@@ -144,6 +198,13 @@ a.nav-link:visited {
 	}
 }
 
+.flex-container-screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 @media (min-width:992px) {
 	.container {
 		max-width: 960px;
@@ -151,17 +212,15 @@ a.nav-link:visited {
 	}
 
 	.flex-container-screen {
-		display: flex;
+		flex-direction: row;
 	}
 
 	.flex-left {
-		flex: 0 0 auto;
-		width: 33.3333333%
+		margin-right: 24px;
 	}
 
 	.flex-right {
-		flex: 0 0 auto;
-		width: 66.66666667%
+		width: 66%;
 	}
 }
 

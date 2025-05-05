@@ -8,19 +8,27 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-	<header>some header</header>
-	<div class="container">
+<body class="full-screen">
+	<nav>
+		<ul>
+			<li><a class="nav-link" href="#aboutme">About me</a></li>
+			<li><a class="nav-link" href="#projects">projects</a></li>
+			<li><a class="nav-link" href="#skills">competencies</a></li>
+		</ul>
+		<hr>
+	</nav>
+	<div class="container" id="aboutme">
 		<div class="flex-container-screen">
 			<div class="flex-left">
 				<img class="circle" id="mugshot" width="300px" src="images/Mugshot.png" alt="Mugshot">
 			</div>
 			<div class="flex-right">
 				<h1 class="text-center" id="Name">Daniel Ploug Hall</h1>
-				<p class="text-center lead" style="font-size: 1.7rem;">Backend developer</p>
-				<p class="text-center lead" style="font-size: 1rem;margin-bottom: 5px;">Email:
+				<p class="text-center lead bottom-margin-5" style="font-size: 1.7rem;">Backend
+					developer</p>
+				<p class="text-center lead contact-info bottom-margin-5">Email:
 					danielploug@hotmail.com</p>
-				<p class="text-center lead" style="font-size: 1rem;margin-bottom: 5px;">Phone: +45 60
+				<p class="text-center lead contact-info bottom-margin-5">Phone: +45 60
 					15 26 04</p>
 				<p class="lead">About me</p>
 				<hr>
@@ -66,31 +74,47 @@
 			</div>
 		</div>
 	</div>
-	<div class="grey-bg">
-		<div class="container">
-			<h1 class="section">Projects</h1>
-			<details>
-				<summary class="header">DiceStatistics: a dice statisical libarary</summary>
-				<frameset>
-
-				</frameset>
-				<frame name="test" src="project1.html"></frame>
-			</details>
-			<details>
-				<summary>PyToTex: A python data to LaTeX table converter</summary>
-				<p>This is project 1</p>
-			</details>
-			<details>
-				<summary>Simple rastorizor</summary>
-				<p>This is project 1</p>
-			</details>
-			<details>
-				<summary>PyPreCore</summary>
-				<p>This is project 1</p>
-			</details>
-		</div>
+	<div class="container" id="projects">
+		<h1 class="section">Projects</h1>
+		<details name="project">
+			<summary class="header">DiceStatistics: a dice statisical libarary</summary>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+			<p>Hello world</p>
+		</details>
+		<details id="project2">
+			<summary>PyToTex: A python data to LaTeX table converter</summary>
+			</a>
+			<p>This is project 1</p>
+		</details>
+		<details>
+			<summary>Simple rastorizor</summary>
+			<p>This is project 1</p>
+		</details>
+		<details>
+			<summary>PyPreCore</summary>
+			<p>This is project 1</p>
+		</details>
 	</div>
-	<div class="container">
+	<div class="container" id="skills">
 		<h1 class="section">Competencies</h1>
 		<ul>
 			<li>
