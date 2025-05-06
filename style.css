@@ -15,6 +15,19 @@ h1 {
 	font-family: "Open Sans", sans-serif;
 }
 
+h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 1.7rem;
+	font-weight: 300;
+	/*font-family: Source Sans Pro, sans-serif;*/
+	font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+	margin-bottom: 5px;
+}
+
 p {
 	margin-top: 0;
 	margin-bottom: 1rem;
@@ -69,7 +82,9 @@ details .content {
 	margin-left: 10px;
 	padding-top: 12px;
 	padding-left: 12px;
-	border: 4px solid #c9c9c9;
+	padding-right: 12px;
+	padding-bottom: 12px;
+	border: 4px solid #dbdbdb;
 	background-color: #f3f3f3;
 	box-shadow: 0 8px 6px -6px #dbdbdb;
 	border-bottom-left-radius: 0.7em;
@@ -78,7 +93,7 @@ details .content {
 }
 
 summary {
-	background: #c9c9c9;
+	background: #dbdbdb;
 	border-top-left-radius: 0.3em;
 	border-top-right-radius: 0.3em;
 	border-bottom-left-radius: 0.5em;
@@ -123,6 +138,13 @@ p.contact-info {
 	margin-bottom: 5px;
 }
 
+ul.dashed {
+	list-style-type: "\2014";
+}
+
+li {
+	padding-left: 10px;
+}
 
 #Name {
 	font-weight: 300;
@@ -170,16 +192,21 @@ p.contact-info {
 }
 
 
-.col {
-	flex: 1 0 0%;
-}
-
 .flex-container {
 	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .full-screen {
 	margin: 0 0 0 0;
+}
+
+.flex-container-screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 
@@ -195,12 +222,6 @@ p.contact-info {
 	}
 }
 
-.flex-container-screen {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
 
 @media (min-width:992px) {
 	.container {
