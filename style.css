@@ -196,17 +196,38 @@ li {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	flex: 0 0 auto
 }
 
 .full-screen {
 	margin: 0 0 0 0;
 }
 
-.flex-container-screen {
+.flex-container-screen,
+div.cards-handler {
 	display: flex;
+}
+
+.flex-container-screen {
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+}
+
+.cards-handler {
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+.card {
+	width: 250px;
+	height: 250px;
+	background-color: red;
+}
+
+.flex-right {
+	width: 95%;
 }
 
 
@@ -238,7 +259,7 @@ li {
 	}
 
 	.flex-right {
-		width: 66%;
+		/* width: 66%;*/
 	}
 }
 
