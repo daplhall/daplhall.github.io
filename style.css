@@ -116,6 +116,10 @@ h1.section {
 	line-height: 1.2;
 }
 
+h3.description {
+	margin-top: 0px;
+}
+
 a.nav-link {
 	text-decoration: None;
 	font-size: 17px;

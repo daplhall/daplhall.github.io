@@ -48,7 +48,7 @@
 						</a>
 					</div>
 					<div class="text-center">
-						<a class="nav-link" href="DanielHallCV.pdf" target="_blank">
+						<a class="nav-link" href="pdf/DanielHallCV.pdf" target="_blank">
 							<img class="logo" src="icons/pdf.ico" alt="resume">
 							<br>
 							Resume
@@ -73,7 +73,7 @@
 					</a>
 				</div>
 				<div id="Description">
-					<h3>Description</h3>
+					<h3 class="description">Description</h3>
 					<p>
 						A statiscial library for dice mechanics, that is still in development.
 						It allows one to calulate exact
@@ -119,8 +119,8 @@
 		<details id="PyPreCore">
 			<summary>PyPreCore: Postproccessing Dust simulation</summary>
 			<div class="content">
-				<div class="flex-container">
-					<div class="col text-center" style="margin-bottom: 5px;">
+				<div class="flex-container" style="justify-content: center;">
+					<div class=" col text-center" style="margin-bottom: 5px;margin-right: 7px;">
 						<a class="nav-link" href="https://github.com/daplhall/PyPreCore"
 							target="_blank">
 							<img class="logo" src="icons/github.ico" alt="Github">
@@ -128,33 +128,59 @@
 							Repo
 						</a>
 					</div>
+					<div class="col text-center" style="margin-bottom: 5px; margin-left: 7px;">
+						<a class="nav-link" href="pdf/DanielHallThesis.pdf" target="_blank">
+							<img class="logo" src="icons/Thesis.ico" alt="Github">
+							<br>
+							Thesis
+						</a>
+					</div>
 
 				</div>
-				<div id="Descriptionq">
-					<h3>Description</h3>
+				<div id="Description">
+					<h3 class="description">Description</h3>
 					<p>
 						This is my thesis program, which was worked on for a year doing the
 						covid
 						lockdown. The program is a post-proccesing simulation
 						for applying interacting dust particles to advanced gas simulations
 						after the
-						fact.
+						fact. I no longer have access to the background simulation data, so
+						the program can't execute. however if you are curious on how this
+						works, you can read chapter 3 of my thesis.
 					</p>
 				</div>
-				<div id="primer">
-					<h3>background primer </h3>
+				<div>
+					<h3>Goals</h3>
+					<ul>
+						<li>
+							To test if dust particles as a post-process if possible
+						</li>
+						<li>
+							To have simulation data with dust and a state of the art 1D gas
+							simulation (provided by superviser)
+						</li>
+					</ul>
+
 				</div>
-				<div id="how-it-works">
-					<h3>How the program works (short version)</h3>
-					<p>The program is written for a background model built on a larganian mesh.</p>
+				<div>
+					<h3>Challanges</h3>
+					<ul>
+						<li>
+							The background model and dust particles needs to line up
+							temporially.
+						</li>
+						<li>
+							The background model is a larganian mesh, so to interpolate we
+							need to take that into account.
+						</li>
+						<li>
+							The physical attributes of the dust particles needs to be
+							mapped into mesh cells for easy processing.
+						</li>
+					</ul>
 				</div>
-				<div id="how-it-works-long">
-					<h3>How the program works (long version)</h3>
-					<p>
-						<a class="nav-link" href="DanielHallThesis.pdf">Read chapter 3 of the
-							thesis</a>
-					</p>
-				</div>
+			</div>
 		</details>
 		<details id="Maze">
 			<summary>Simple maze generator</summary>
@@ -169,7 +195,7 @@
 						</a>
 					</div>
 				</div>
-				<h3>Description</h3>
+				<h3 class="description">Description</h3>
 				<p>
 					This is a small program that can generate a random maze, solve it and display
 					the maze and solution in the command prompt. It was written over a weekend.
@@ -200,6 +226,7 @@
 						</a>
 					</div>
 				</div>
+				<h3 class="description">Description</h3>
 				HIGHLIGHT THE TGA WRITER, it was written from a specification from 1986
 			</div>
 		</details>
