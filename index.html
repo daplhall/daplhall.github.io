@@ -17,19 +17,22 @@
 			</div>
 			<div class="flex-right" style="margin-left: 5px;margin-right: 5px;">
 				<h1 class="text-center" id="Name">Daniel Ploug Hall</h1>
-				<h2 class="text-center">Backend Developer</h2>
+				<h2 class="text-center">Software Developer</h2>
 				<p class="text-center lead contact-info bottom-margin-5"><b>Email:</b>
 					danielploug@hotmail.com</p>
-				<p class="text-center lead contact-info bottom-margin-5"><b>Phone:</b> +45 60
-					15 26 04</p>
-				<p class="lead">About me</p>
+				<p class="text-center lead contact-info bottom-margin-5" style="margin-bottom: 10px;">
+					<b>Phone:</b> +45 60
+					15 26 04
+				</p>
+				<p class="lead">I am a backend end developer who have focused on database and data
+					pipelines. I have a
+					Master in computational physics in which i focused on computer simulations.</p>
 				<hr>
-				<p class="lead">Professional interests: Language interoperability, Algorithm design,
-					Numerical
-					Methods
+				<p class="lead">Professional interests: Algorithm design, Performance,
+					Numerical Methods
 				</p>
 				<hr>
-				<p class="lead">Personal Interest: Archery, Tabletop Roleplay Design</p>
+				<p class="lead">Personal Interest: Tabletop Roleplay Design, Illustrating</p>
 				<hr>
 				<div class="flex-container" style="margin-right: 0.5rem;margin-left: 0.5rem;">
 					<div class="text-center">
@@ -59,11 +62,16 @@
 			</div>
 		</div>
 	</div>
-
+	<!--------------------------------------------------------------------->
 	<div class="container" id="projects">
 		<h1 class="section">Projects</h1>
 		<details id="DiceStatistics">
-			<summary class="header">Dicechanics: A statistical library</summary>
+			<summary> <a class="nav-link" href="https://www.linkedin.com/in/daniel-ploug-hall-a960b1217/"
+					target="_blank">
+					<img class="logo_inline" src="icons/python.ico" alt="Linkedin">
+				</a>
+				Dicechanics: A statistical library
+			</summary>
 			<div class="content">
 				<div class="col text-center" style="margin-bottom: 5px;">
 					<a class="nav-link" href="https://github.com/daplhall/DiceStatistics"
@@ -76,22 +84,27 @@
 				<div id="Description">
 					<h3 class="description">Description</h3>
 					<p>
-						A statiscial library for dice mechanics, that is still in development.
-						It allows one to calulate exact
-						(zero monto carlo) properbility distributions for various dice
-						operations, may it be dice or custom.
+						Dicechanics is a statistical library for modelling dice mechanics.
+						It calculates the exact probability pr. instruction, and thus doesn't
+						use any random generation.
+						Through its interface one can define custom operations on a set of
+						multiple dice, such that
+						various dice mechanics one can think up can be modelled.
+					</p>
+					<p>
+						The target audience is boardgames enthusiasts and -designers.
 					</p>
 				</div>
-				Have some code snippits
 				<div>
 					<h3>Goals</h3>
 					<ul>
 						<li>
-							Provide and easy to use interface, such that one can quickly
-							test dice configurations.
+							To provide and easy to use interface, such that one can quickly
+							test dice configurations and mechanics
 						</li>
 						<li>
-							Calulating complex dice configurations should not take longer to
+							Calculating complex dice operations should not take longer
+							to
 							complete
 							than getting a cup of coffee.
 						</li>
@@ -99,26 +112,89 @@
 
 				</div>
 				<div>
-					<h3>Challanges</h3>
+					<h3>Challenges</h3>
+					<ul>
+						<li>
+							<p>Finding an algorithm that allows one to choose a subset of
+								dice which to do operations on.</p>
+							<p>To illustrate what is meant here we can look at an example.
+								You roll five d6 and get [1,1,3,5,6], you then want to
+								sum the 3 largest numbers, which here results in
+								3+5+6 = 14.
+							</p>
+						</li>
+						<li>
+							Implementing a clean interface full of features, while still
+							having good performance.
+						</li>
+					</ul>
 				</div>
 				<div>
 					<h3>Reflection</h3>
+					<p>
+						The library is atm feature complete and can do the various standard
+						operations which it should do. The interface is also quite intuitive
+						although it does have some quirks suck as <code>Die.count</code> having
+						to clean way
+						of defining a range of numbers to count.
+					</p>
+					<p>
+						The performance on the selective algorithm (the one described in
+						Challenges), is slower than i want it to be
+						however the reason for this is known, and its due to the current caching
+						not being able to recognize already solved sub problems.
+					</p>
+
+					<p>
+						I am satisfied with where the library is at, however i am far from done
+						with it and have quite a few ideas for improvement on all fronts.
+					</p>
+
 				</div>
 				<div>
-					<h3>Future</h3>
-					<p>
-						I want to reimplement the libarary in C, and then extend python with
-						that
-						implementation instead. Weather or Not the binding will be written
-						through the Python API or by the libary <a class=""
-							href="https://github.com/pybind/pybind11"
-							target="_blank">Pybind</a> is not decided yet.
-					</p>
+					<h3>Future ideas</h3>
+					<ul>
+						<li>
+							<p>
+								I want to reimplement the library in C, and then extend
+								python with
+								that
+								implementation instead. Weather or Not the binding will
+								be written
+								through the Python API or by the library <a class=""
+									href="https://github.com/pybind/pybind11"
+									target="_blank">Pybind</a> is not decided yet.
+							</p>
+						</li>
+						<li>
+							<p>
+								Through the library you can use a die as a decorator to
+								apply a
+								function as a map, thus creating new die. However the
+								only
+								used argument
+								for the decorated function is outcome.
+								Here i want attributes such as the maximum face of the
+								die to be
+								available. Here one can use the python function
+								<code>signature</code> to get the argument names. From
+								which we can "type check" the argument names to ensure
+								only allowed names are given, and if not raise an
+								exception.
+							</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</details>
 		<details id="PyPreCore">
-			<summary>PyPreCore: Postproccessing Dust simulation</summary>
+			<summary> <a class="nav-link" href="https://www.linkedin.com/in/daniel-ploug-hall-a960b1217/"
+					target="_blank">
+					<img class="logo_inline" src="icons/python.ico" alt="Linkedin">
+				</a>
+				PyPreCore: Post-processing Dust simulation
+			</summary>
+
 			<div class="content">
 				<div class="flex-container" style="justify-content: center;">
 					<div class=" col text-center" style="margin-bottom: 5px;margin-right: 7px;">
@@ -143,7 +219,7 @@
 					<p>
 						This is my thesis program, which was worked on for a year doing the
 						covid
-						lockdown. The program is a post-proccesing simulation
+						shutdown. The program is a post-processing simulation
 						for applying interacting dust particles to advanced gas simulations
 						after the
 						fact. I no longer have access to the background simulation data, so
@@ -159,20 +235,20 @@
 						</li>
 						<li>
 							To have simulation data with dust and a state of the art 1D gas
-							simulation (provided by superviser)
+							simulation (provided by my supervisor)
 						</li>
 					</ul>
 
 				</div>
 				<div>
-					<h3>Challanges</h3>
+					<h3>Challenges</h3>
 					<ul>
 						<li>
 							The background model and dust particles needs to line up
-							temporially.
+							temporally.
 						</li>
 						<li>
-							The background model is a larganian mesh, so to interpolate we
+							The background model is a lagrangian mesh, so to interpolate we
 							need to take that into account.
 						</li>
 						<li>
@@ -187,7 +263,12 @@
 			</div>
 		</details>
 		<details id="Maze">
-			<summary>Simple maze generator</summary>
+			<summary> <a class="nav-link" href="https://www.linkedin.com/in/daniel-ploug-hall-a960b1217/"
+					target="_blank">
+					<img class="logo_inline" src="icons/C.ico" alt="Linkedin">
+				</a>
+				Simple maze generator
+			</summary>
 			<div class="content">
 				<div class="flex-container">
 					<div class="col text-center" style="margin-bottom: 5px;">
@@ -201,37 +282,22 @@
 				</div>
 				<h3 class="description">Description</h3>
 				<p>
-					This is a small program that can generate a random maze, solve it and display
-					the maze and solution in the command prompt. It was written over a weekend.
+					This was a small project made over a weekend. It generates a random maze, solves
+					it and
+					then displays it to the console.
 				</p>
 				<p>
-					This project illustrates my organization of a C project. Abstract data types
-					are defined such as the <a
+					This project illustrates how i organize my C projects. I use abstract data types
+					represented
+					by opaque pointers. Two examples of such are the <a
 						href="https://github.com/daplhall/Maze-Generation/blob/main/src/stack.c"
 						target="_blank">Stack</a> (pointer stack) and the <a
 						href="https://github.com/daplhall/Maze-Generation/blob/main/src/valstack.c"
 						target="_blank">Valstack</a> (value stack).
-					They have a defined interface which operates on a opaque pointer.
-					This means that the data is hidden away, and the code is more modular.
+					They have an defined interface for which to interact with it, thus hides the
+					data from
+					the user. This naturally leads to more safe code.
 				</p>
-			</div>
-		</details>
-		<details id="raster">
-			<summary>TGA file writer</summary>
-			<div class="content">
-				<div class="flex-container">
-					<div class="col text-center" style="margin-bottom: 5px;">
-						<a class="nav-link"
-							href="https://github.com/daplhall/Terminal-Rastrorizer"
-							target="_blank">
-							<img class="logo" src="icons/github.ico" alt="Github">
-							<br>
-							Repo
-						</a>
-					</div>
-				</div>
-				<h3 class="description">Description</h3>
-				HIGHLIGHT THE TGA WRITER, it was written from a specification from 1986
 			</div>
 		</details>
 	</div>

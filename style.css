@@ -102,11 +102,25 @@ summary {
 	cursor: pointer;
 	outline: 5px;
 	box-shadow: 0 8px 6px -6px #dbdbdb;
+	text-align: middle;
+}
+
+img.logo,
+img.logo_inline {
+	vertical-align: middle;
 }
 
 img.logo {
 	width: 35px;
-	vertical-align: middle;
+}
+
+img.logo_inline {
+	width: 1.1rem;
+	background-color: #474747;
+	border-radius: 5rem;
+	padding: 3px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 h1.section {
