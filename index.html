@@ -24,7 +24,7 @@
 					<b>Phone:</b> +45 60
 					15 26 04
 				</p>
-				<p class="lead">I am a backend developer who have focused on database and data
+				<p class="lead">I am a backend developer who have focused on databases and data
 					pipelines. I am quite passionate about computer simulations.</p>
 				<hr>
 				<p class="lead">Professional interests: Algorithm design, Performance,
@@ -127,33 +127,34 @@
 					<ul>
 						<li>
 							<p>Finding an algorithm that allows one to choose a subset of
-								dice which to do operations on.</p>
-							<p>To illustrate what is meant here we can look at an example.
+								dice, from which operations are applied. Here is an
+								example
+								to
+								illustrate the problem.
 								You roll five d6 and get [1,1,3,5,6], you then want to
 								sum the 3 largest numbers, which here results in
 								3+5+6 = 14.
 							</p>
-						</li>
-						<li>
-							Implementing a clean interface full of features, while still
-							having good performance.
 						</li>
 					</ul>
 				</div>
 				<div>
 					<h3>Reflection</h3>
 					<p>
-						The library is atm feature complete and can do the various standard
-						operations which it should do. The interface is also quite intuitive
-						although it does have some quirks suck as <code>Die.count</code> having
-						to clean way
-						of defining a range of numbers to count.
+						The library is at the moment feature complete. The interface is for the
+						most part intuitive and easy to use. However the custom operations needs
+						a bit more work.
+						For while the algorithm can take an arbitrary input, there is currently
+						no
+						way to set an initial/default state, which means that the function
+						passed down
+						needs to be written awkwardly.
 					</p>
 					<p>
 						The performance on the selective algorithm (the one described in
-						Challenges), is slower than i want it to be
-						however the reason for this is known, and its due to the current caching
-						not being able to recognize already solved sub problems.
+						Challenges), is slower than i want it to be.
+						The reason, however, is known, and its due to the current caching
+						not being able to recognize that one problem is a subproblem of another.
 					</p>
 
 					<p>
@@ -231,8 +232,9 @@
 						This program was written for my thesis, which i worked on for a year
 						doing covid shutdown. Its a post-processing dust particle simulation,
 						for adding a layer of dust to
-						already executed gas simulations. In this project it was a prestellar
-						core, which is a part of the creation process of stars and planets.
+						already executed gas simulations. In this project the background model
+						was a prestellar
+						core, which is a part of the creation of stars and planets.
 						<br><br>
 						The program was made to run on lagrangian meshes, however the data is
 						not available to me anymore. It can however run on a Bonnor-Ebert
@@ -272,7 +274,7 @@
 						target="_blank">Stack</a> (pointer stack) and the <a
 						href="https://github.com/daplhall/Maze-Generation/blob/main/src/valstack.c"
 						target="_blank">Valstack</a> (value stack).
-					They have an defined interface for which to interact with it, thus hides the
+					They have a defined interface from which one interacts with it, thus hiding the
 					data from
 					the user. This naturally leads to more safe code.
 				</p>
