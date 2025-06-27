@@ -153,8 +153,8 @@
 					<p>
 						The performance on the selective algorithm (the one described in
 						Challenges), is slower than i want it to be.
-						The reason, however, is known, and its due to the current caching
-						not being able to recognize that one problem is a subproblem of another.
+						The reason, however, is known. Its due to the current caching
+						not being able to recognize that one problem is a subset of another.
 					</p>
 
 					<p>
@@ -169,9 +169,7 @@
 						<li>
 							<p>
 								I want to reimplement the library in C, and then extend
-								python with
-								that
-								implementation instead. Weather or Not the binding will
+								python with it. Weather or Not the binding will
 								be written
 								through the Python API or by the library <a class=""
 									href="https://github.com/pybind/pybind11"
@@ -180,15 +178,12 @@
 						</li>
 						<li>
 							<p>
-								Through the library you can use a die as a decorator to
-								apply a
-								function as a map, thus creating new die. However the
-								only
-								used argument
-								for the decorated function is outcome.
-								Here i want attributes such as the maximum face of the
-								die to be
-								available. Here one can use the python function
+								The library allows the user to use dice as a decorator
+								over a mapping function.
+								Here it would be nice if in the mapping function the
+								user could refer to attributes of the die
+								eg. the largest face. Here one can use the python
+								function
 								<code>signature</code> to get the argument names. From
 								which we can "type check" the argument names to ensure
 								only allowed names are given, and if not raise an
