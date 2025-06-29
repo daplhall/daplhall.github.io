@@ -41,43 +41,11 @@ hr {
 	opacity: .60;
 }
 
-nav {
-	background-color: #262626;
-	background-color: #f1f1f1;
-	position: sticky;
-	top: 0;
-	padding: 10px 20px;
-	display: flex;
-	justify-content: right;
-	align-items: center;
-	z-index: 1;
-}
-
-nav ul {
-	display: flex;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-nav ul li {
-	margin-right: 20px;
-}
 
 details {
 	padding: 10px;
 }
 
-/*
-details:hover,
-details:focus {
-	background: #d4d1ec;
-}
-
-details[open] {
-	background: #d4d1ec;
-}
-*/
 details .content {
 	margin-left: 10px;
 	padding-top: 12px;
@@ -165,10 +133,44 @@ li {
 	padding-left: 8px;
 }
 
+.sticky {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
 
-#nav-bar {
-	margin-top: 0;
-	padding-top: 0;
+nav.navbar {
+	background-color: #eeeef0;
+	display: flex;
+	justify-content: end;
+	border-bottom: 1px solid #bcbcc0;
+}
+
+nav.navbar ul {
+	list-style-type: None;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-right: 40px;
+	overflow: hidden;
+
+}
+
+nav.navbar a {
+	color: black;
+	text-decoration: None;
+	padding: 15px;
+	display: block;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+nav.navbar a:hover {
+	background-color: #cfcfcf;
+}
+
+nav.navbar li {
+	float: right;
 }
 
 .name {
@@ -251,6 +253,9 @@ div.cards-handler {
 	hyphens: manual;
 }
 
+.about {
+	width: 300px;
+}
 
 
 @media (min-width:576px) {
