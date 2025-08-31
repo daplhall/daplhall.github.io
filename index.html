@@ -110,14 +110,14 @@
 						Python function prototypes is going to be a small library which
 						allows
 						one to
-						define function prototypes which can be checked at runtime, to
-						ensure
-						that the
+						define function prototypes which can be checked at runtime. This allows
+						one to ensure that the
 						parameter names, types and function return types match the
 						defined
-						interface. It will allow flexibility in the hardness if the
+						interface. The user can define the hardness of enforcement of
+						the
 						prototype
-						and a "pytest fixture"-like arguments.
+						and allowing arguments similar to pytests fixtures.
 						An example of usage/intent can be found <a class="navlink"
 							href="https://github.com/daplhall/PyFuncPrototypes#example"
 							target="_blank">here</a>
@@ -138,6 +138,19 @@
 						</li>
 					</ul>
 				</div>
+				<div>
+					<h3>Why?</h3>
+					<p>
+						The strength of python is its flexibility coming from its dynamic
+						typing. However sometimes a hard structure for typing is needed, such as
+						functions passed as arguments into algorithms. This is needed for my
+						project <a class="nav-link"
+							href="https://github.com/daplhall/dicechanics" target="_blank">
+							dicechanics</a>, in which i want to define a hard interface for
+						how the
+						user should write their custom operations.
+					</p>
+				</div>
 			</div>
 		</details>
 		<h1 class="section">Completed projects</h1>
@@ -151,7 +164,7 @@
 			<div class="content">
 				<div class="flex-container" style="justify-content: center;">
 					<div class=" col text-center" style="margin-bottom: 5px;margin-right: 7px;">
-						<a class="nav-link" href="https://github.com/daplhall/DiceStatistics"
+						<a class="nav-link" href="https://github.com/daplhall/dicechanics"
 							target="_blank">
 							<img class="logo" src="icons/github.ico" alt="Github">
 							<br>
