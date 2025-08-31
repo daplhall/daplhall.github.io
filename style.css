@@ -257,6 +257,10 @@ div.cards-handler {
 	width: 300px;
 }
 
+.center-align-text {
+	vertical-align: middle;
+}
+
 
 @media (min-width:576px) {
 	.container {
