@@ -70,10 +70,55 @@
 	<!--------------------------Projects------------------------------------>
 	<div class="container" id="projects">
 		<h1 class="section">Work in progress</h1>
+		<details id="scraper">
+			<summary><span class="center-align-text">A web scraper -
+					<img class="logo_inline"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C"> <img
+						class="logo_inline"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+						alt="C++"></span></summary>
+			<div class="content">
+				<div class="flex-container">
+					<div class="col text-center" style="margin-bottom: 5px;"><a class="nav-link"
+							href="https://github.com/daplhall/CWebScrapeing" target="_blank"><img class="logo"
+								src="icons/github.ico" alt="Github"><br>
+							Repo</a></div>
+				</div>
+				<h3 class="description">Description</h3>
+				<p>The purpose of this project is to write a web scraper in C for
+					the joy of writing a webscraper in C. It currenly uses <a
+						href="https://github.com/curl/curl">cURL</a>, <a
+						href="https://github.com/GNOME/libxml2">libxml2</a> and <a
+						href="https://github.com/google/robotstxt">googles robotstxt</a> (which
+					is where C++ comes in).</p>
+				<h3>Challanges</h3>
+				<p>Writing a webscraper has 4 base challenges</p>
+				<ol>
+					<li>Doing a request to a webpage (can be done with cURL)</li>
+					<li>Respecting the sites <a href="https://en.wikipedia.org/wiki/Robots.txt">Robots.txt</a> (Can be
+						done with Google's robotstxt)</li>
+					<li>Parsing the HTML or API Output (Can be done with libxml2 for
+						HTML, APIs are just cURL)</li>
+					<li>Outputting the data somewhere (A PostgreSQL database can be
+						used here with <a href="https://www.postgresql.org/docs/current/libpq.html">libpg</a>)</li>
+				</ol>
+				However, webscraping is facing some challenges with point number 1,
+				in that many websites have increased their botting security, and as
+				such, web scraping has become more difficult. Here I wanna
+				experiment with the <a href="https://github.com/lexiforest/curl-impersonate">curl-impersonate</a>
+				repository, as it can impersonate web browsers.
+				<h3>Current outlook</h3>
+				<p>The project is as of 2025-October-13 going strong, I have
+					completed points 1 and 3, and I am currently working on point 2.
+					Here Google's robotstxt comes in handy, as I (for now) don't have
+					to write my own parser.</p>
+			</div>
+		</details>
 		<details id="PyFuncPrototypes">
-			<summary><span class="center-align-text">
-					Python Function
-					Prototypes - <img class="logo_inline" src="icons/python.ico" alt="Python"></span></summary>
+			<summary><span class="center-align-text">Python Function Prototypes
+					- <img class="logo_inline"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+						alt="Python"></span></summary>
 			<div class="content">
 				<div class="flex-container" style="justify-content: center;">
 					<div class="col text-center" style="margin-bottom: 5px;margin-right: 7px;"><a class="nav-link"
@@ -84,19 +129,19 @@
 				<div>
 					<h3>Description</h3>
 					<p>Python function prototypes is going to be a small library which
-						allows one to define function prototypes which can be checked at
+						allows one to define function prototypes, which can be checked at
 						runtime. This allows one to ensure that the parameter names, types
 						and function return types match the defined interface. The user can
-						define the hardness of enforcement of the prototype and allowing
-						arguments similar to pytests fixtures. An example of usage/intent
+						define the hardness of enforcement of the prototype, and allow
+						arguments similar to PyTest fixtures. An example of usage/intent
 						can be found <a class="navlink" href="https://github.com/daplhall/PyFuncPrototypes#example"
 							target="_blank">here</a></p>
 				</div>
 				<div>
 					<h3>Goals</h3>
 					<ul>
-						<li>To define an easy to use interface, such that prototypes can be
-							created instantly, and changed in response to the project
+						<li>To define an easy-to-use interface, such that prototypes can be
+							created instantly and changed in response to the project's
 							needs.</li>
 						<li>Allow the prototype to be dynamic, such that not every defined
 							parameter is needed in the input function</li>
@@ -104,21 +149,23 @@
 				</div>
 				<div>
 					<h3>Why?</h3>
-					<p>The strength of python is its flexibility coming from its
-						dynamic typing. However sometimes a hard structure for typing is
+					<p>The strength of Python is its flexibility (coming from its
+						dynamic typing). However, sometimes a hard structure for typing is
 						needed, such as functions passed as arguments into algorithms. This
-						is needed for my project <a class="nav-link" href="https://github.com/daplhall/dicechanics"
-							target="_blank">dicechanics</a>, in which i want to define a hard
+						is needed for my project <a href="https://github.com/daplhall/dicechanics"
+							target="_blank">dicechanics</a>, in which I want to define a hard
 						interface for how the user should write their custom operations,
-						while being able to give feedback in case they make a mistake.</p>
+						while being able to give them feedback in case they make a
+						mistake.</p>
 				</div>
 			</div>
 		</details>
 		<h1 class="section">Completed projects</h1>
 		<details id="DiceStatistics">
-			<summary><span class="center-align-text">
-					Dicechanics: A statistical
-					library - <img class="logo_inline" src="icons/python.ico" alt="Python"></span></summary>
+			<summary><span class="center-align-text">Dicechanics: A statistical
+					library - <img class="logo_inline"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+						alt="Python"></span></summary>
 			<div class="content">
 				<div class="flex-container" style="justify-content: center;">
 					<div class="col text-center" style="margin-bottom: 5px;margin-right: 7px;"><a class="nav-link"
@@ -197,9 +244,10 @@
 			</div>
 		</details>
 		<details id="PyPreCore">
-			<summary><span class="center-align-text"> PyPreCore: Post-processing
-					Dust simulation - <img class="logo_inline" src="icons/python.ico" alt="Python">
-				</span></summary>
+			<summary><span class="center-align-text">PyPreCore: Post-processing
+					Dust simulation - <img class="logo_inline"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+						alt="Python"></span></summary>
 			<div class="content">
 				<div class="flex-container" style="justify-content: center;">
 					<div class="col text-center" style="margin-bottom: 5px;margin-right: 7px;"><a class="nav-link"
@@ -236,11 +284,11 @@
 					<h3 class="description">Reflection</h3>
 					The challenges of interpolating between moving reference points
 					were extremely fun and satisfying. Though there are quite a few
-					things that could have been improved given time. Such as
-					weighting the time interpolation based on the closeness to each
-					background snapshot. Furthermore The program is trivially
-					parallel, which could be a way to improve performance, which
-					already isn't terrible.<br>
+					things that could have been improved given time. Such as weighting
+					the time interpolation based on the closeness to each background
+					snapshot. Furthermore The program is trivially parallel, which
+					could be a way to improve performance, which already isn't
+					terrible.<br>
 					<br>
 					The biggest problem with the project lies in its scope, as the
 					motivation for working on it doing the Danish lockdown took quite a
@@ -248,29 +296,6 @@
 					made it quite hard to validate the data from actual
 					measurements.
 				</div>
-			</div>
-		</details>
-		<details id="Maze">
-			<summary><span class="center-align-text"> Simple maze
-					generator - <img class="logo_inline" src="icons/C.ico" alt="C"></span></summary>
-			<div class="content">
-				<div class="flex-container">
-					<div class="col text-center" style="margin-bottom: 5px;"><a class="nav-link"
-							href="https://github.com/daplhall/Maze-Generation" target="_blank"><img class="logo"
-								src="icons/github.ico" alt="Github"><br>
-							Repo</a></div>
-				</div>
-				<h3 class="description">Description</h3>
-				<p>This was a small project made over a weekend. It generates a
-					random maze, solves it and then displays it to the console.</p>
-				<p>This project illustrates how i organize my C projects. I use
-					abstract data types represented by opaque pointers. Two examples of
-					such are the <a href="https://github.com/daplhall/Maze-Generation/blob/main/src/stack.c"
-						target="_blank">Stack</a> (pointer stack) and the <a
-						href="https://github.com/daplhall/Maze-Generation/blob/main/src/valstack.c"
-						target="_blank">Valstack</a> (value stack). They have a defined
-					interface from which one interacts with it, thus hiding the data
-					from the user. This naturally leads to more safe code.</p>
 			</div>
 		</details>
 	</div>
