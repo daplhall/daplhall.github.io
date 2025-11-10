@@ -120,7 +120,93 @@
 				</div>
 			</div>
 		</details>
-		<details id="scraper">
+		<details id="DiceStatistics">
+			<summary><span class="center-align-text">Dicechanics: A statistical
+					library - <img class="logo_inline"
+						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+						alt="Python"></span></summary>
+			<div class="content">
+				<div class="flex-container" style="justify-content: center;">
+					<div class="col text-center" style="margin-bottom: 5px;margin-right: 7px;"><a class="nav-link"
+							href="https://github.com/daplhall/dicechanics" target="_blank"><img class="logo"
+								src="icons/github.ico" alt="Github"><br>
+							Repo</a></div>
+					<!--
+					<div class="col text-center" style="margin-bottom: 5px; margin-left: 7px;"><a class="nav-link"
+							href="https://daplhall.github.io/dicechanics/" target="_blank"><img class="logo"
+								src="icons/documentation.ico" alt="Documentation"><br>
+							Docs</a></div>
+-->
+				</div>
+				<div id="Description">
+					<h3 class="description">Description</h3>
+					<p>Dicechanics is a statistical library for modelling dice
+						mechanics. It calculates the exact probability pr. instruction, and
+						thus doesn't use any random generation. Through its interface one
+						can define custom operations on a set of multiple dice, such that
+						various dice mechanics one can think up can be modelled.</p>
+					<p>The target audience is boardgames enthusiasts and
+						-designers.</p>
+				</div>
+				<div>
+					<h3>Goals</h3>
+					<ul>
+						<li>To provide and easy to use interface, such that one can quickly
+							test dice configurations and mechanics</li>
+						<li>Calculating complex dice operations should not take longer to
+							complete than getting a cup of coffee.</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Challenges</h3>
+					<ul>
+						<li>
+							<p>Finding an algorithm that allows one to choose a subset of dice,
+								from which operations are applied. Here is an example to illustrate
+								the problem. You roll five d6 and get [1,1,3,5,6], you then want to
+								sum the 3 largest numbers, which here results in 3+5+6 = 14.</p>
+						</li>
+					</ul>
+				</div>
+				<!--
+				<div>
+					<h3>Reflection</h3>
+					<p>The library is at the moment feature complete. The interface is
+						for the most part intuitive and easy to use. However the custom
+						operations needs a bit more workings. For while the algorithm can
+						take an arbitrary input, there is currently no way to set an
+						initial/default state, which means that the function passed down
+						needs to be written awkwardly.</p>
+					<p>The performance on the selective algorithm (the one described in
+						Challenges), is slower than i want it to be. The reason, however,
+						is known. Its due to the current caching not being able to
+						recognize that one problem is a subset of another.</p>
+					<p>I am satisfied with where the library is at, however i am far
+						from done with it and have quite a few ideas for improvement on all
+						fronts.</p>
+				</div>
+				<div>
+					<h3>Future ideas</h3>
+					<ul>
+						<li>
+							<p>I want to reimplement the library in C, and then extend python
+								with it. Weather or Not the binding will be written through the
+								Python API or by the library <a class="" href="https://github.com/pybind/pybind11"
+									target="_blank">Pybind</a> is
+								not decided yet.</p>
+						</li>
+						<li>
+							<p>The library allows the user to use dice as a decorator over a
+								mapping function. Here it would be nice if in the mapping function
+								the user could refer to attributes of the die eg. the largest
+								face.</p>
+						</li>
+					</ul>
+				</div>
+-->
+			</div>
+		</details>
+		<!-- <details id="scraper">
 			<summary><span class="center-align-text">A web scraper -
 					<img class="logo_inline"
 						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C"> <img
@@ -166,90 +252,9 @@
 						href="https://github.com/daplhall/CWebScrapeing/blob/main/src/scrape/url.c"
 						target="_blank">here</a>.</p>
 			</div>
-		</details>
+			</details>
+			-->
 		<h1 class="section">Completed projects</h1>
-		<details id="DiceStatistics">
-			<summary><span class="center-align-text">Dicechanics: A statistical
-					library - <img class="logo_inline"
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-						alt="Python"></span></summary>
-			<div class="content">
-				<div class="flex-container" style="justify-content: center;">
-					<div class="col text-center" style="margin-bottom: 5px;margin-right: 7px;"><a class="nav-link"
-							href="https://github.com/daplhall/dicechanics" target="_blank"><img class="logo"
-								src="icons/github.ico" alt="Github"><br>
-							Repo</a></div>
-					<div class="col text-center" style="margin-bottom: 5px; margin-left: 7px;"><a class="nav-link"
-							href="https://daplhall.github.io/dicechanics/" target="_blank"><img class="logo"
-								src="icons/documentation.ico" alt="Documentation"><br>
-							Docs</a></div>
-				</div>
-				<div id="Description">
-					<h3 class="description">Description</h3>
-					<p>Dicechanics is a statistical library for modelling dice
-						mechanics. It calculates the exact probability pr. instruction, and
-						thus doesn't use any random generation. Through its interface one
-						can define custom operations on a set of multiple dice, such that
-						various dice mechanics one can think up can be modelled.</p>
-					<p>The target audience is boardgames enthusiasts and
-						-designers.</p>
-				</div>
-				<div>
-					<h3>Goals</h3>
-					<ul>
-						<li>To provide and easy to use interface, such that one can quickly
-							test dice configurations and mechanics</li>
-						<li>Calculating complex dice operations should not take longer to
-							complete than getting a cup of coffee.</li>
-					</ul>
-				</div>
-				<div>
-					<h3>Challenges</h3>
-					<ul>
-						<li>
-							<p>Finding an algorithm that allows one to choose a subset of dice,
-								from which operations are applied. Here is an example to illustrate
-								the problem. You roll five d6 and get [1,1,3,5,6], you then want to
-								sum the 3 largest numbers, which here results in 3+5+6 = 14.</p>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h3>Reflection</h3>
-					<p>The library is at the moment feature complete. The interface is
-						for the most part intuitive and easy to use. However the custom
-						operations needs a bit more workings. For while the algorithm can
-						take an arbitrary input, there is currently no way to set an
-						initial/default state, which means that the function passed down
-						needs to be written awkwardly.</p>
-					<p>The performance on the selective algorithm (the one described in
-						Challenges), is slower than i want it to be. The reason, however,
-						is known. Its due to the current caching not being able to
-						recognize that one problem is a subset of another.</p>
-					<p>I am satisfied with where the library is at, however i am far
-						from done with it and have quite a few ideas for improvement on all
-						fronts.</p>
-				</div>
-				<div>
-					<h3>Future ideas</h3>
-					<ul>
-						<li>
-							<p>I want to reimplement the library in C, and then extend python
-								with it. Weather or Not the binding will be written through the
-								Python API or by the library <a class="" href="https://github.com/pybind/pybind11"
-									target="_blank">Pybind</a> is
-								not decided yet.</p>
-						</li>
-						<li>
-							<p>The library allows the user to use dice as a decorator over a
-								mapping function. Here it would be nice if in the mapping function
-								the user could refer to attributes of the die eg. the largest
-								face.</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</details>
 		<details id="PyPreCore">
 			<summary><span class="center-align-text">PyPreCore: Post-processing
 					Dust simulation - <img class="logo_inline"
