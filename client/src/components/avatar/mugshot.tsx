@@ -1,4 +1,4 @@
-import mugshot from '../../assets/images/mugshot.png'
+import mugshot from '@assets/images/mugshot.png'
 export default function Mugshot() {
     return (
         <img

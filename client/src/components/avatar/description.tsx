@@ -1,5 +1,5 @@
-import BuisnessCard from "./buisness_card"
-import Socials from "./socials"
+import BuisnessCard from "@components/avatar/buisness_card"
+import Socials from "@components/avatar/socials"
 
 export default function AvatarDescription() {
     return (
