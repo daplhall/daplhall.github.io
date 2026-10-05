@@ -28,7 +28,7 @@ export default function Projects() {
                     {
                         icon: Icons.github,
                         text: "Repo",
-                        src: "https://github.com/daplhall/dicechanics"
+                        src: "https://github.com/daplhall/pyprecore"
                     },
                     {
                         icon: Icons.thesis,
