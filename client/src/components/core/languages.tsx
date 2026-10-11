@@ -15,5 +15,17 @@ export const languages = {
     Cpp: {
         name: "C++",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+    },
+    React: {
+        name: "React",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+    },
+    Html: {
+        name: "HTML",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+    },
+    Typescript: {
+        name: "TypeScript",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
     }
 } as const satisfies Record<string, Language>;
