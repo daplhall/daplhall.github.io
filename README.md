@@ -58,3 +58,10 @@ This would be much cleaner and better to undertand
 # Reading
 [Rule of React](https://react.dev/reference/rules)
 [React compiler](react.dev/learn/react-compiler/installation)
+
+
+# Update to about me
+- Background and interests
+- Your approach to development
+- Values, motivations, and personality
+- What you want to do next
