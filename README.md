@@ -53,3 +53,8 @@ I should be able to pass children down to a project highlight eg
 </HighlightDetail>
 ```
 This would be much cleaner and better to undertand
+
+
+# Reading
+[Rule of React](https://react.dev/reference/rules)
+[React compiler](react.dev/learn/react-compiler/installation)
