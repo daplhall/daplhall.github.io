@@ -1,8 +1,8 @@
-import HighlightDetails from "@components/core/highlight"
+import HighlightDetails from "@components/highlight"
 import { languages } from "../../data/languages"
 import { Icons } from "../../data/icon"
-import Markdown from "@components/core/markdown"
-import portofolio from "@content/projects/portofolio.md?raw"
+import Markdown from "@components/markdown"
+import portofolio from "@data/projects/content/portofolio.md?raw"
 
 export default function Protofolio() {
     return (

@@ -9,6 +9,14 @@ You need `npm`
 cd client
 npm run dev
 ```
+## Creating Production
+```
+npm run build
+```
+To preview you simply write
+```
+npm run preview
+```
 
 # How not use use relative paths
 in `tsconfig.app.json`

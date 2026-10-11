@@ -1,4 +1,4 @@
-import Markdown from "@components/core/markdown";
+import Markdown from "@components/markdown";
 
 
 type Props = {

@@ -1,8 +1,8 @@
-import HighlightDetails from "@components/core/highlight"
+import HighlightDetails from "@components/highlight"
 import { languages } from "../../data/languages"
 import { Icons } from "../../data/icon"
-import Markdown from "@components/core/markdown"
-import pyprototypes from "@content/projects/pyprototypes.md?raw"
+import Markdown from "@components/markdown"
+import pyprototypes from "@data/projects/content/pyprototypes.md?raw"
 
 export default function PyPrototypes() {
     return (

@@ -1,8 +1,8 @@
-import HighlightDetails from "@components/core/highlight"
+import HighlightDetails from "@components/highlight"
 import { languages } from "../../data/languages"
 import { Icons } from "../../data/icon"
-import Markdown from "@components/core/markdown"
-import cwebscraper from "@content/projects/cwebscraper.md?raw"
+import Markdown from "@components/markdown"
+import cwebscraper from "@data/projects/content/cwebscraper.md?raw"
 
 export default function CWebScraper() {
     return (

@@ -1,8 +1,8 @@
-import HighlightDetails from "@components/core/highlight"
+import HighlightDetails from "@components/highlight"
 import { languages } from "../../data/languages"
 import { Icons } from "../../data/icon"
-import Markdown from "@components/core/markdown"
-import pyprecore from "@content/projects/pyprecore.md?raw"
+import Markdown from "@components/markdown"
+import pyprecore from "@data/projects/content/pyprecore.md?raw"
 
 export default function PyPreCore() {
     return (
