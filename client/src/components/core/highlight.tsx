@@ -1,5 +1,5 @@
 import { type ReactNode, Fragment } from "react";
-import type { Language } from "@components/projects/languages";
+import type { Language } from "@components/core/languages";
 import type { Icon } from "@components/core/icon";
 
 export interface ProjectLink {
@@ -12,10 +12,11 @@ type Highlights = {
     name: string;
     languages: Language[];
     links: ProjectLink[];
-    body: ReactNode;
+    children: ReactNode;
+
 };
 
-export default function HighlightDetails({ name, languages, links, body }: Highlights) {
+export default function HighlightDetails({ name, languages, links, children }: Highlights) {
     return (
         <>
             <details>
@@ -33,9 +34,6 @@ export default function HighlightDetails({ name, languages, links, body }: Highl
                         }
                     </span>
                 </summary>
-                <div>
-                    { }
-                </div>
                 <div className="content">
                     <div className="flex-container" style={{ justifyContent: "center" }}>
                         {
@@ -51,7 +49,7 @@ export default function HighlightDetails({ name, languages, links, body }: Highl
                         }
                     </div>
                     <div>
-                        {body}
+                        {children}
                     </div>
                 </div>
             </details >

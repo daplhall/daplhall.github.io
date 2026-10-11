@@ -1,6 +1,15 @@
 # Portofolio
 Stuff
 
+# Getting Started
+You need `npm`
+
+## Running the frontend in dev
+```bash
+cd client
+npm run dev
+```
+
 # How not use use relative paths
 in `tsconfig.app.json`
 add
@@ -20,3 +29,19 @@ Furthere more in `vite.config.ts` add
   }
 ```
 to `defineConfig`
+
+# Projects
+Projects text should be markdown
+
+I should be able to pass children down to a project highlight eg
+
+```
+<HighlightDetails
+    Links
+    name
+    languages
+>
+  <markdown text content>
+</HighlightDetail>
+```
+This would be much cleaner and better to undertand
