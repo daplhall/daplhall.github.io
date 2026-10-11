@@ -4,12 +4,12 @@ export type Person = {
     location: string;
     email: string;
     phone: string;
-}
+};
 
-export const buisnessCard: Person = {
+export const buisnessCard = {
     name: "Daniel Ploug Hall",
     position: "Data Scientist @ Saxo Bank",
     location: "Copenhagen, Denmark",
     email: "danielploug@hotmail.com",
     phone: "+45 60 15 26 04"
-}
+} satisfies Person;
