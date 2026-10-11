@@ -1,6 +1,6 @@
 import HighlightDetails from "@components/highlight"
-import { languages } from "../../data/languages"
-import { Icons } from "../../data/icon"
+import { languages } from "@data/languages"
+import { Icons } from "@data/icon"
 import Markdown from "@components/markdown"
 import ttstatistics from "@data/projects/content/ttstatistics.md?raw"
 

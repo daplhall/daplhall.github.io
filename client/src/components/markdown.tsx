@@ -1,9 +1,9 @@
 import ReactMarkdown from "react-markdown";
 
-type Props = {
+type MarkdownProps = {
     children: string;
 };
 
-export default function Markdown({ children }: Props) {
+export default function Markdown({ children }: MarkdownProps) {
     return <ReactMarkdown>{children}</ReactMarkdown>;
 }

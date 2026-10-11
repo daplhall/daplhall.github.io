@@ -1,6 +1,6 @@
 import { type ReactNode, Fragment } from "react";
-import type { Language } from "../data/languages";
-import type { Icon } from "../data/icon";
+import type { Language } from "@data/languages";
+import type { Icon } from "@data/icon";
 
 export interface ProjectLink {
     icon: Icon;
@@ -8,7 +8,7 @@ export interface ProjectLink {
     src: string
 }
 
-type Highlights = {
+type HighlightsProb = {
     name: string;
     languages: Language[];
     links: ProjectLink[];
@@ -16,7 +16,7 @@ type Highlights = {
 
 };
 
-export default function HighlightDetails({ name, languages, links, children }: Highlights) {
+export default function HighlightDetails({ name, languages, links, children }: HighlightsProb) {
     return (
         <>
             <details>
