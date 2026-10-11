@@ -7,7 +7,7 @@ import cwebscraper from "@content/projects/cwebscraper.md?raw"
 export default function CWebScraper() {
     return (
         <HighlightDetails
-            name="Python Function Prototypes"
+            name="A web scraper"
             languages={[languages.C, languages.Cpp]}
             links={[
                 {
