@@ -7,7 +7,7 @@ The purpose of this project is to write a web scraper in C for the joy of writin
 Writing a web scraper has four basic challenges:
 
 1. Making a request to a webpage (can be done with cURL).
-2. Respecting the site's **`robots.txt` (can be done with Google's robotstxt).
+2. Respecting the site's **`robots.txt`** (can be done with Google's robotstxt).
 3. Parsing the HTML or API output (can be done with libxml2 for HTML; APIs can be accessed using cURL).
 4. Outputting the data somewhere (a PostgreSQL database can be used here with [libpq](<https://www.postgresql.org/docs/current/libpq.html>)).
 
