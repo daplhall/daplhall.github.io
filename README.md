@@ -65,5 +65,3 @@ This would be much cleaner and better to undertand
 - Your approach to development
 - Values, motivations, and personality
 - What you want to do next
-
-#
