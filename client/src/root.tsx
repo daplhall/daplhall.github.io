@@ -1,0 +1,36 @@
+import "@style/style.css"
+import {
+    Links,
+    Meta,
+    Outlet,
+    Scripts,
+    ScrollRestoration,
+} from "react-router"
+
+export function Layout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    return (
+        <html lang="en">
+            <head>
+                <title>Daniel Hall's portfolio</title>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+                <link rel="icon" type="image/x-icon" href="/Website.ico" />
+                <Meta />
+                <Links />
+            </head>
+            <body>
+                {children}
+                <ScrollRestoration />
+                <Scripts />
+            </body>
+        </html>
+    );
+}
+
+export default function Root() {
+    return <Outlet />;
+}
