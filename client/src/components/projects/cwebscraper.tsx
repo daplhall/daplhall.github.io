@@ -8,7 +8,7 @@ export default function CWebScraper() {
     return (
         <HighlightDetails
             name="A web scraper"
-            languages={[languages.C, languages.Cpp]}
+            languages={[languages.C, languages.Cpp, languages.CMake]}
             links={[
                 {
                     icon: Icons.github,

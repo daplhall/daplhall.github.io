@@ -16,6 +16,10 @@ export const languages = {
         name: "C++",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
     },
+    CMake: {
+        name: "CMake",
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cmake/cmake-original.svg"
+    },
     React: {
         name: "React",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
