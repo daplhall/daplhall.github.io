@@ -8,7 +8,7 @@ export default function About() {
     return (
         <>
             <Navbar />
-            <div className="container center flex fill-66" style={{ marginTop: "24px" }}>
+            <div className="container center flex flex-center flex-align-center" style={{ marginTop: "24px" }}>
                 <Avatar avatar={Daniel} />
             </div >
             <div className="container center">

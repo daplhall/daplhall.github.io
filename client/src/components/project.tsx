@@ -18,16 +18,16 @@ export default function Project({ project }: { project: ProjectInfo }) {
                 }
             </>
         >
-            <div className="flex-container" style={{ justifyContent: "center" }}>
+            <div className="flex flex-center flex-gap flex-row text-center"  >
                 {
                     project.links.map((link) =>
-                        <div key={link.link.text} className="col text-center" style={{ marginBottom: "5px", marginRight: "7px" }} >
+                        <Fragment key={link.link.text}>
                             <a className="nav-link" href={link.link.src} target="_blank">
-                                <img className="icon" src={link.icon.icon} alt={link.icon.name} />
+                                <img className="icon" src={link.icon.icon} alt={link.icon.name} style={{}} />
                                 <br />
                                 {link.link.text}
                             </a>
-                        </div>
+                        </Fragment>
                     )
                 }
             </div>
