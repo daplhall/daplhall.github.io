@@ -9,3 +9,5 @@ On a professional level i have worked as a developer and/or data scientist doing
 ---
 
 **Personal Interest:** Game design for roleplaying games, HPC, Numerical Methods
+
+---

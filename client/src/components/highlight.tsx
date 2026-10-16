@@ -11,10 +11,10 @@ export default function HighlightDetails({ name, children }: HighlightsProb) {
         <>
             <details>
                 <summary>
-                    <span className="center-align-text"> {name}
+                    <span className=""> {name}
                     </span>
                 </summary>
-                <div className="content">
+                <div className="box">
                     <div>
                         {children}
                     </div>

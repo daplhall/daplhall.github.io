@@ -1,7 +1,6 @@
 import { languages, type Language } from "@data/languages";
 import type { IconLink } from "../links";
 import { type ReactNode } from "react";
-import Markdown from "@components/markdown";
 import { Icons } from "@data/icon";
 
 import pyprototypes from "@data/projects/content/PyPrototypes.md?raw"
@@ -9,6 +8,7 @@ import ttstatistics from "@data/projects/content/TTStatistics.md?raw"
 import pyprecore from "@data/projects/content/PyPreCore.md?raw"
 import portofolio from "@data/projects/content/Portofolio.md?raw"
 import cwebscraper from "@data/projects/content/CWebScraper.md?raw"
+import Article from "@components/content/article";
 
 export interface ProjectInfo {
     name: string
@@ -20,13 +20,13 @@ export interface ProjectInfo {
 export const projects = {
     TTStatsitics: {
         name: "TTStatistics: A Statistical Library",
-        children: <Markdown>{ttstatistics}</Markdown>,
+        children: <Article>{ttstatistics}</Article>,
         links: [],
         languages: [languages.Python]
     },
     PyPrototypes: {
         name: "Python Function Prototypes",
-        children: <Markdown>{pyprototypes}</Markdown>,
+        children: <Article>{pyprototypes}</Article>,
         languages: [languages.Python],
         links: [
             {
@@ -40,7 +40,7 @@ export const projects = {
     },
     PyPreCore: {
         name: "PyPreCore: Post-processing Dust Simulation",
-        children: <Markdown>{pyprecore}</Markdown>,
+        children: <Article>{pyprecore}</Article>,
         languages: [languages.Python],
         links: [
             {
@@ -61,7 +61,7 @@ export const projects = {
     },
     Protofolio: {
         name: "Protofolio Website",
-        children: <Markdown>{portofolio}</Markdown>,
+        children: <Article>{portofolio}</Article>,
         links: [
             {
                 icon: Icons.Github,
@@ -76,7 +76,7 @@ export const projects = {
     },
     CWebScraper: {
         name: "A web scraper",
-        children: <Markdown>{cwebscraper}</Markdown>,
+        children: <Article>{cwebscraper}</Article>,
         languages: [languages.C, languages.Cpp, languages.CMake],
         links: [
             {

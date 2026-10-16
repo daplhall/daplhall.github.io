@@ -4,29 +4,27 @@ import type { TheAvatar } from "@data/avatar/base"
 import { Fragment } from "react/jsx-runtime";
 
 
-function BuisnessCard({ card }: { card: Card }) {
+function BuisnessCard({ card, className }: { card: Card, className?: string }) {
     return (
         <>
-            <h1 className="text-center name">{card.name}</h1>
-            <h2 className="text-center">{card.position}</h2>
-            <p className="text-center lead contact-info bottom-margin-5">
+            <h1 className={className}>{card.name}</h1>
+            <h2 className={className}>{card.position}</h2>
+            <p className={className}>
                 <b>Location:</b> {card.location}
             </p>
-            <p className="text-center lead contact-info bottom-margin-5">
+            <p className={className}>
                 <b>Email:</b> {card.email}
             </p>
-            <p className="text-center lead contact-info bottom-margin-5" style={{ marginBottom: "10px" }}>
+            <p className={className} style={{ marginBottom: "10px" }}>
                 <b>Phone:</b> {card.phone}
             </p>
         </>
     )
 }
 
-
-
 function Socials({ linkicons }: { linkicons: IconLink[] }) {
     return (
-        <div className="flex-container" style={{ marginRight: "0.5rem", marginLeft: "0.5rem" }}>
+        <div className="flex flex-evenly flex-align-center" >
             {
                 linkicons.map((linkicon) =>
                     <Fragment key={linkicon.link.text}>
@@ -34,7 +32,7 @@ function Socials({ linkicons }: { linkicons: IconLink[] }) {
                             <a className="nav-link" href={linkicon.link.src}
                                 target="_blank" >
                                 <img
-                                    className="logo"
+                                    className="icon"
                                     src={linkicon.icon.icon}
                                     alt={linkicon.icon.name}
                                 />
@@ -52,22 +50,23 @@ function Socials({ linkicons }: { linkicons: IconLink[] }) {
 
 export default function Avatar({ avatar }: { avatar: TheAvatar }) {
     return (
-        <div className="flex-container-screen" style={{ marginTop: '24px' }}>
-            <div className="flex-left">
-                <img
+        <>
+            <div className="right-margin-24">
+                < img
                     src={avatar.portrait}
                     alt="ProfileImage"
                     className="circle"
                     id="mugshot"
                     width="300px"
                 />
-            </div>
-            <div className="flex-right">
-                <BuisnessCard card={avatar.card} />
+            </div >
+            <div className="fill-66">
+                <div className="card">
+                    <BuisnessCard className="text-center" card={avatar.card} />
+                </div>
                 {avatar.children}
-                <hr />
                 <Socials linkicons={avatar.socials} />
             </div>
-        </div>
+        </>
     )
 }

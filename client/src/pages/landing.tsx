@@ -8,17 +8,19 @@ export default function About() {
     return (
         <>
             <Navbar />
-            <div className="container" id="aboutme">
+            <div className="container center flex fill-66" style={{ marginTop: "24px" }}>
                 <Avatar avatar={Daniel} />
-            </div>
-            <div className="container" id="projects">
-                <h1 className="section">Completed projects</h1>
-                <Project project={projects.TTStatsitics} />
-                <Project project={projects.PyPreCore} />
-                <Project project={projects.Protofolio} />
-                <h1 className="section">Work in progress</h1>
-                <Project project={projects.CWebScraper} />
-                <Project project={projects.PyPrototypes} />
+            </div >
+            <div className="container center">
+                <div className="fill">
+                    <h1>Completed projects</h1>
+                    <Project project={projects.TTStatsitics} />
+                    <Project project={projects.PyPreCore} />
+                    <Project project={projects.Protofolio} />
+                    <h1>Work in progress</h1>
+                    <Project project={projects.CWebScraper} />
+                    <Project project={projects.PyPrototypes} />
+                </div>
             </div>
         </>
     )

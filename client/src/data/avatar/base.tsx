@@ -2,8 +2,8 @@ import { type ReactNode } from "react";
 import { type IconLink } from "@data/links";
 import { Icons } from "@data/icon"
 import Mugshot from "@assets/images/mugshot.png";
-import Markdown from "@components/markdown";
 import about from "@data/avatar/content/about.md?raw"
+import Section from "@components/content/section"
 
 export interface TheAvatar {
     portrait: string;
@@ -54,5 +54,5 @@ export const Daniel = {
         },
     ],
     card: buisnessCard,
-    children: <Markdown>{about}</Markdown>
+    children: <Section className="description">{about}</Section>
 } as const satisfies TheAvatar;
