@@ -21,15 +21,7 @@ export const projects = {
     TTStatsitics: {
         name: "TTStatistics: A Statistical Library",
         children: <Markdown>{ttstatistics}</Markdown>,
-        links: [
-            {
-                icon: Icons.Github,
-                link: {
-                    text: "Repo",
-                    src: "https://github.com/daplhall/daplhall.github.io"
-                }
-            }
-        ],
+        links: [],
         languages: [languages.Python]
     },
     PyPrototypes: {

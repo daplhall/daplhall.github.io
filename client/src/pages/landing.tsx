@@ -1,30 +1,25 @@
+import Navbar from "@components/navbar"
+import Project from "@components/project"
+import Avatar from "@components/avatar"
+import { projects } from "@data/projects/project"
+import { Daniel } from "@data/avatar/base"
 
-import Avatar from '@components/avatar'
-import Navbar from '@components/navbar'
-import '@style/style.css'
-import CWebScraper from "@components/projects/cwebscraper"
-import PyPreCore from "@components/projects/pyprecore"
-import TTStatistics from "@components/projects/ttstatistics"
-import PyPrototypes from "@components/projects/pyprototypes"
-import Portofolio from "@components/projects/portofolio"
-
-
-
-export default function Landing() {
+export default function About() {
     return (
         <>
             <Navbar />
-            <Avatar />
-
+            <div className="container" id="aboutme">
+                <Avatar avatar={Daniel} />
+            </div>
             <div className="container" id="projects">
                 <h1 className="section">Completed projects</h1>
-                <TTStatistics />
-                <PyPreCore />
-                <Portofolio />
+                <Project project={projects.TTStatsitics} />
+                <Project project={projects.PyPreCore} />
+                <Project project={projects.Protofolio} />
                 <h1 className="section">Work in progress</h1>
-                <CWebScraper />
-                <PyPrototypes />
-            </div >
+                <Project project={projects.CWebScraper} />
+                <Project project={projects.PyPrototypes} />
+            </div>
         </>
     )
 }
