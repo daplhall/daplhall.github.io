@@ -1,1 +1,0 @@
-**Personal Interest:** Game design for roleplaying games, HPC, Numerical Methods

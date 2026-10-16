@@ -1,6 +1,7 @@
 import github from "@assets/icons/github.ico"
 import pdficon from "@assets/icons/pdf.ico"
 import thesis from "@assets/icons/Thesis.ico"
+import linkedin from "@assets/icons/Linkedin.ico"
 
 
 export interface Icon {
@@ -9,16 +10,20 @@ export interface Icon {
 }
 
 export const Icons = {
-    github: {
+    Github: {
         name: "Github",
         icon: github,
     },
-    docs: {
+    Docs: {
         name: "Documentation",
         icon: pdficon
     },
-    thesis: {
+    Thesis: {
         name: "Thesis",
         icon: thesis
+    },
+    Linkedin: {
+        name: "Linkedin",
+        icon: linkedin,
     }
 } as const satisfies Record<string, Icon>;
