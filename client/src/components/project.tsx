@@ -1,0 +1,40 @@
+import { Fragment } from "react";
+import HighlightDetails from "@components/highlight"
+import type { ProjectInfo } from "@data/projects/project";
+
+export default function Project({ project }: { project: ProjectInfo }) {
+    return (
+        <HighlightDetails
+            name=<>{project.name} -
+                {
+                    project.languages.map((language) =>
+                        <Fragment key={language.name}> <img />
+                            <img
+                                className="inline"
+                                src={language.src}
+                                alt={language.name} />
+                        </Fragment>
+                    )
+                }
+            </>
+        >
+            <div className="flex flex-center flex-gap flex-row text-center"  >
+                {
+                    project.links.map((link) =>
+                        <Fragment key={link.link.text}>
+                            <a className="nav-link" href={link.link.src} target="_blank">
+                                <img className="icon" src={link.icon.icon} alt={link.icon.name} style={{}} />
+                                <br />
+                                {link.link.text}
+                            </a>
+                        </Fragment>
+                    )
+                }
+            </div>
+            <div>
+                {project.children}
+            </div>
+        </HighlightDetails>
+    )
+
+}

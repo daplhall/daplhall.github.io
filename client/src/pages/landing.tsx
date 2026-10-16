@@ -1,15 +1,27 @@
+import Navbar from "@components/navbar"
+import Project from "@components/project"
+import Avatar from "@components/avatar"
+import { projects } from "@data/projects/project"
+import { Daniel } from "@data/avatar/base"
 
-import Avatar from '@components/avatar/avatar'
-import Navbar from '@components/navbar'
-import Projects from '@components/projects/main'
-import '@style/style.css'
-
-export default function Landing() {
+export default function About() {
     return (
         <>
             <Navbar />
-            <Avatar />
-            <Projects />
+            <div className="container center flex flex-center flex-align-center" style={{ marginTop: "24px" }}>
+                <Avatar avatar={Daniel} />
+            </div >
+            <div className="container center">
+                <div className="fill">
+                    <h1>Completed projects</h1>
+                    <Project project={projects.TTStatsitics} />
+                    <Project project={projects.PyPreCore} />
+                    <Project project={projects.Protofolio} />
+                    <h1>Work in progress</h1>
+                    <Project project={projects.CWebScraper} />
+                    <Project project={projects.PyPrototypes} />
+                </div>
+            </div>
         </>
     )
 }

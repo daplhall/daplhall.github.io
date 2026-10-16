@@ -1,14 +1,10 @@
-import Avatar from '@components/avatar/avatar'
-import Navbar from '@components/navbar'
-import Projects from '@components/projects/main'
+import About from '@pages/landing';
 import '@style/style.css'
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Avatar />
-      <Projects />
+      <About />
     </>
   )
 }
