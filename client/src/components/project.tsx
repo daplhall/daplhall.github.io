@@ -31,9 +31,7 @@ export default function Project({ project }: { project: ProjectInfo }) {
                     )
                 }
             </div>
-            <div>
-                {project.children}
-            </div>
+            {project.children}
         </HighlightDetails>
     )
 

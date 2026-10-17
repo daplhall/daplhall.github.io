@@ -15,9 +15,7 @@ export default function HighlightDetails({ name, children }: HighlightsProb) {
                     </span>
                 </summary>
                 <div className="box">
-                    <div>
-                        {children}
-                    </div>
+                    {children}
                 </div>
             </details >
         </>
