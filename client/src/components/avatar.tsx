@@ -24,7 +24,7 @@ function BuisnessCard({ card, className }: { card: Card, className?: string }) {
 
 function Socials({ linkicons }: { linkicons: IconLink[] }) {
     return (
-        <div className="flex flex-evenly flex-align-center" >
+        <div className="flex flex-evenly flex-align-center flex-row" >
             {
                 linkicons.map((linkicon) =>
                     <Fragment key={linkicon.link.text}>
