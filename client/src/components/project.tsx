@@ -18,7 +18,8 @@ export default function Project({ project }: { project: ProjectInfo }) {
                 }
             </>
         >
-            <div className="flex flex-center flex-gap flex-row text-center"  >
+            <div className="flex flex-center flex-align-center flex-row flex-gap text-center content"  >
+
                 {
                     project.links.map((link) =>
                         <Fragment key={link.link.text}>
