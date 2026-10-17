@@ -11,8 +11,8 @@ export default function Project({ project }: { project: ProjectInfo }) {
                         <Fragment key={language.name}> <img />
                             <img
                                 className="inline"
-                                src={language.src}
-                                alt={language.name} />
+                                src={language.icon.src}
+                                alt={language.icon.alt} />
                         </Fragment>
                     )
                 }
@@ -24,7 +24,7 @@ export default function Project({ project }: { project: ProjectInfo }) {
                     project.links.map((link) =>
                         <Fragment key={link.link.text}>
                             <a className="nav-link" href={link.link.src} target="_blank">
-                                <img className="icon" src={link.icon.icon} alt={link.icon.name} style={{}} />
+                                <img className="icon" src={link.icon.src} alt={link.icon.alt} style={{}} />
                                 <br />
                                 {link.link.text}
                             </a>

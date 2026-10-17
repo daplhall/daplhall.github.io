@@ -5,25 +5,25 @@ import linkedin from "@assets/icons/Linkedin.ico"
 
 
 export interface Icon {
-    name: string;
-    icon: string;
+    alt: string;
+    src: string;
 }
 
 export const Icons = {
     Github: {
-        name: "Github",
-        icon: github,
+        alt: "Github",
+        src: github,
     },
     Docs: {
-        name: "Documentation",
-        icon: pdficon
+        alt: "Documentation",
+        src: pdficon
     },
     Thesis: {
-        name: "Thesis",
-        icon: thesis
+        alt: "Thesis",
+        src: thesis
     },
     Linkedin: {
-        name: "Linkedin",
-        icon: linkedin,
+        alt: "Linkedin",
+        src: linkedin,
     }
 } as const satisfies Record<string, Icon>;

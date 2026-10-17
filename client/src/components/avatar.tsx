@@ -33,8 +33,8 @@ function Socials({ linkicons }: { linkicons: IconLink[] }) {
                                 target="_blank" >
                                 <img
                                     className="icon"
-                                    src={linkicon.icon.icon}
-                                    alt={linkicon.icon.name}
+                                    src={linkicon.icon.src}
+                                    alt={linkicon.icon.alt}
                                 />
                                 <br />
                                 {linkicon.link.text}
