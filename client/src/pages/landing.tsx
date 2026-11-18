@@ -15,11 +15,11 @@ export default function About() {
                 <div className="fill">
                     <h1>Completed projects</h1>
                     <Project project={projects.TTStatsitics} />
-                    <Project project={projects.PyPreCore} />
-                    <Project project={projects.Protofolio} />
-                    <h1>Work in progress</h1>
-                    <Project project={projects.CWebScraper} />
                     <Project project={projects.PyPrototypes} />
+                    <Project project={projects.Protofolio} />
+                    <Project project={projects.PyPreCore} />
+                    <h1>Work in progress</h1>
+                    <Project project={projects.HomeSystem} />
                 </div>
             </div>
         </>

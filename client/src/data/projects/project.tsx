@@ -8,6 +8,7 @@ import ttstatistics from "@data/projects/content/TTStatistics.md?raw"
 import pyprecore from "@data/projects/content/PyPreCore.md?raw"
 import portofolio from "@data/projects/content/Portofolio.md?raw"
 import cwebscraper from "@data/projects/content/CWebScraper.md?raw"
+import homesystem from "@data/projects/content/HomeSystem.md?raw"
 import Article from "@components/content/article";
 
 export interface ProjectInfo {
@@ -87,5 +88,17 @@ export const projects = {
                 }
             }
         ],
+    },
+    HomeSystem : {
+	    name : "Home System",
+	    children: <Article>{ homesystem }</Article>,
+	    languages : [languages.Python, languages.NixOS],
+	    links: []
+    },
+    ArenaAllocator : {
+	    name : "Arena Allocator",
+	    children: <Article>{ homesystem }</Article>,
+	    languages: [languages.C, languages.Cpp, languages.CMake],
+	    links: []
     }
 } as const satisfies Record<string, ProjectInfo>

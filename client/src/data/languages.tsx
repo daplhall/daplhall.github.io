@@ -55,5 +55,12 @@ export const languages = {
             alt: "typescript",
             src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
         }
+    },
+    NixOS : {
+	    name : "NixOS",
+	    icon : {
+		    alt: "nixos",
+		    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nixos/nixos-original.svg"
+	    }
     }
 } as const satisfies Record<string, Language>;
