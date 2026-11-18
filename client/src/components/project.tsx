@@ -5,10 +5,10 @@ import type { ProjectInfo } from "@data/projects/project";
 export default function Project({ project }: { project: ProjectInfo }) {
     return (
         <HighlightDetails
-            name=<>{project.name} -
+            name=<>{project.name} - 
                 {
                     project.languages.map((language) =>
-                        <Fragment key={language.name}> <img />
+                        <Fragment key={language.name}> 
                             <img
                                 className="inline"
                                 src={language.icon.src}

@@ -60,7 +60,7 @@ export default function Avatar({ avatar }: { avatar: TheAvatar }) {
                     width="300px"
                 />
             </div >
-            <div className="fill-66">
+            <div className="container">
                 <div className="card">
                     <BuisnessCard className="text-center" card={avatar.card} />
                 </div>
