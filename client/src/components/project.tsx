@@ -6,12 +6,16 @@ import TechTag from "@components/techtags";
 export default function Project({ project }: { project: ProjectInfo }) {
     return (
         <HighlightDetails
-            name=<>{project.name}<br/>
+            name=<>
+	    {project.name}
+	    <div className="tech-tags">
                 {
                     project.languages.map((language) =>
                         <TechTag language={language} key={language.name}/>
                     )
                 }
+
+	    </div>
             </>
         >
             <div className="flex flex-center flex-align-center flex-row flex-gap text-center content"  >

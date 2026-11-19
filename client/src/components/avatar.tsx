@@ -61,9 +61,7 @@ export default function Avatar({ avatar }: { avatar: TheAvatar }) {
                 />
             </div >
             <div className="container">
-                <div className="card">
-                    <BuisnessCard className="text-center" card={avatar.card} />
-                </div>
+                <BuisnessCard className="text-center" card={avatar.card} />
                 {avatar.children}
                 <Socials linkicons={avatar.socials} />
             </div>

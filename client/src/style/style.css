@@ -1,3 +1,8 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --background: #fafaf9;
     --surface: #ffffff;
@@ -20,6 +25,27 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+@layer base {
+	h1 {
+		@apply text-3xl font-bold tracking-tight text-gray-900 ;
+	}
+	h2 {
+		@apply text-2xl font-semibold tracking-tight text-gray-900;
+	}
+	h3 {
+		@apply text-gray-900 mb-1 text-lg;
+	}
+}
+@layer components {
+	.description {
+		@apply text-gray-900 mb-4 text-xl;
+		p {
+			@apply mb-2 mt-2
+		}
+	}
+
 }
 
 
@@ -239,14 +265,14 @@ summary:focus-visible {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 12px;
+    margin-top: 1px;
 }
 
 .tech-tag {
     display: inline-flex;
     align-items: center;
 
-    padding: 4px 11px;
+    padding: 4px 10px;
 
     background: var(--background);
     border: 1px solid #dcdcdc;
@@ -304,26 +330,9 @@ img {
 
 }
 
-.description {
-	font-family: Open sans, sans-serif;
 
-	& hr {
-		margin: 1rem 0;
-		border: 0;
-		border-top: 1px solid grey;
-		opacity: 0.6;
-	}
-
-	& p {
-		font-family: Open sans, sans-serif;
-		font-size: 1.25rem;
-		margin-top: 0;
-		margin-bottom: 1rem;
-	}
-
-	& p {
-		font-size: 1.25rem;
-	}
+.buisnessCard {
+	margin-bottom : 4px;
 }
 
 /* Responsive layout */
