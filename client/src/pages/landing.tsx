@@ -1,4 +1,3 @@
-import Navbar from "@components/navbar"
 import Project from "@components/project"
 import Avatar from "@components/avatar"
 import { projects } from "@data/projects/project"
