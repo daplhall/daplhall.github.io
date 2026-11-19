@@ -1,4 +1,4 @@
-_There is currently no link to the repo as i am rewriting the entire project to be general in terms of Stochastic Proccesses. I choose to do this because i releasize that the probability curve of every discrete event is just a dice roll and thus this project can model it fast and completely.
+_There is currently no link to the repo as i am rewriting the entire project to be general in terms of Stochastic Proccesses. I choose to do this because i releasize that the probability curve of every discrete event is just a dice roll and thus this project can model it fast and completely._
 # Description
 TTStatistics is a statistical library for boardgames, it currently includes Dicechancis which is a general statistical calculator for modelling dice mechanics. It allows the user to calculations exact probabilities on arbitrary subsets of a pool of arbitrary dice. It achieves this through a simple to use API that follows a functional paradigm as seen [here](https://daplhall.github.io/dicechanics/usage/DicechanicsPrimer.html). It does this while being equal or faster than rival libraries
 

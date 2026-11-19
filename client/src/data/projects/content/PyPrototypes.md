@@ -1,4 +1,3 @@
-_The Projects Readme still says WIP, but this project is done, and works as i want it to_
 # Description
 
 PyPrototypes is a module that allows the user to define a prototype to enforce for an API. This can be useful when designing an API that takes a function as input. It currently supports checking the argument names of a function and their associated types.

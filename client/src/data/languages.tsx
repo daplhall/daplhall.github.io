@@ -62,5 +62,12 @@ export const languages = {
 		    alt: "nixos",
 		    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nixos/nixos-original.svg"
 	    }
+    },
+    Tailwind : {
+	    name: "TailwindCSS",
+	    icon : {
+		    alt: "tailwind",
+		    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+	    }
     }
 } as const satisfies Record<string, Language>;

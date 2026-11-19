@@ -23,7 +23,8 @@ export const projects = {
     TTStatsitics: {
         name: "TTStatistics: A Statistical Library",
         children: <Article>{ttstatistics}</Article>,
-        links: [],
+        links: [
+	],
         languages: [languages.Python]
     },
     PyPrototypes: {
@@ -73,7 +74,7 @@ export const projects = {
                 }
             }
         ],
-        languages: [languages.Html, languages.Typescript, languages.React],
+        languages: [languages.Html, languages.Typescript, languages.React, languages.Tailwind],
 
     },
     CWebScraper: {
