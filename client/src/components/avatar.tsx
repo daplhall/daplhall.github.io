@@ -1,7 +1,6 @@
 import type { Card } from "@data/avatar/base";
 import type { IconLink } from "@data/links";
 import type { TheAvatar } from "@data/avatar/base"
-import { Fragment } from "react/jsx-runtime";
 
 
 function BuisnessCard({ card, className }: { card: Card, className?: string }) {

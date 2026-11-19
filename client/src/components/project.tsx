@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import HighlightDetails from "@components/highlight"
 import type { ProjectInfo } from "@data/projects/project";
 import TechTag from "@components/techtags";
