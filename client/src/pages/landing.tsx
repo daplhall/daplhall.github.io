@@ -13,10 +13,10 @@ export default function About() {
                 <div className="fill">
                     <h1>Things i have built</h1>
                     <p>A collection of projects, experiments and things I've enjoyed creating.</p>
+                    <Project project={projects.ArenaAllocator} />
                     <Project project={projects.TTStatsitics} />
                     <Project project={projects.PyPrototypes} />
                     <Project project={projects.Protofolio} />
-                    <Project project={projects.PyPreCore} />
                     <h1>Things i am working on</h1>
                     <p>A collection of projects i am currently working on</p>
                     <Project project={projects.HomeSystem} />

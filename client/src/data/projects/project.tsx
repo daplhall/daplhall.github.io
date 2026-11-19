@@ -9,6 +9,7 @@ import pyprecore from "@data/projects/content/PyPreCore.md?raw"
 import portofolio from "@data/projects/content/Portofolio.md?raw"
 import cwebscraper from "@data/projects/content/CWebScraper.md?raw"
 import homesystem from "@data/projects/content/HomeSystem.md?raw"
+import arena from "@data/projects/content/ArenaAllocator.md?raw"
 import Article from "@components/content/article";
 
 export interface ProjectInfo {
@@ -97,8 +98,16 @@ export const projects = {
     },
     ArenaAllocator : {
 	    name : "Arena Allocator",
-	    children: <Article>{ homesystem }</Article>,
+	    children: <Article>{ arena }</Article>,
 	    languages: [languages.C, languages.Cpp, languages.CMake],
-	    links: []
+	    links: [
+		{
+			icon: Icons.Github,
+			link: {
+				text: "Repo",
+				src: "https://github.com/daplhall/GraphicsProject/tree/arena/collections/hash-table/modules/arena"
+			}
+		}
+	    ]
     }
 } as const satisfies Record<string, ProjectInfo>
