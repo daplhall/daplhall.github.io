@@ -1,19 +1,15 @@
 import { Fragment } from "react";
 import HighlightDetails from "@components/highlight"
 import type { ProjectInfo } from "@data/projects/project";
+import TechTag from "@components/techtags";
 
 export default function Project({ project }: { project: ProjectInfo }) {
     return (
         <HighlightDetails
-            name=<>{project.name} - 
+            name=<>{project.name}<br/>
                 {
                     project.languages.map((language) =>
-                        <Fragment key={language.name}> 
-                            <img
-                                className="inline"
-                                src={language.icon.src}
-                                alt={language.icon.alt} />
-                        </Fragment>
+                        <TechTag language={language} key={language.name}/>
                     )
                 }
             </>

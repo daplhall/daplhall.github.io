@@ -90,7 +90,7 @@ export const projects = {
         ],
     },
     HomeSystem : {
-	    name : "Home System",
+	    name : "Compute 'Cluster' at home",
 	    children: <Article>{ homesystem }</Article>,
 	    languages : [languages.Python, languages.NixOS],
 	    links: []
