@@ -208,6 +208,7 @@ pre {
 		padding: 20px;
 		background-color: #eee;
 		border: 1px solid #999;
+		overflow-x:scroll;
 	}
 
 }
