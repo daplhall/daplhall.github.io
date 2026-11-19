@@ -18,17 +18,17 @@ export default function Project({ project }: { project: ProjectInfo }) {
 	    </div>
             </>
         >
-            <div className="flex flex-center flex-align-center flex-row flex-gap text-center content"  >
-
+            <div>
                 {
                     project.links.map((link) =>
-                        <Fragment key={link.link.text}>
-                            <a className="nav-link" href={link.link.src} target="_blank">
+                        <div className="icon-links" key={link.link.text}>
+                            <a className="icon-link" href={link.link.src} target="_blank">
                                 <img className="icon" src={link.icon.src} alt={link.icon.alt} style={{}} />
-                                <br />
-                                {link.link.text}
+				<p>
+					{link.link.text}
+				</p>
                             </a>
-                        </Fragment>
+                        </div>
                     )
                 }
             </div>

@@ -1,21 +1,21 @@
-### Description
+# Description
 This program was written for my thesis, which i worked on for a
     year doing covid lockdown. Its a post-processing dust particle
     simulation, for adding a layer of dust to already executed gas
     simulations. The background model was a prestellar core, which is a
     part of the creation of stars and planets.
-### Goals
+# Goals
 
 - To see if a post-processing simulation made sense to create.
 - To find new knowledge about the concentration of dust when the background model has correct radiative transfer.
 
-### Challanges
+# Challanges
 - Interpolating within a Lagrangian mesh.
 - Interpolating within the time steps/snapshots of the background model.
 - Depositing particles into radial cells.
 - Creating a simulation from scr
 
-### Reflection
+# Reflection
 The challenges of interpolating between moving reference points
 were extremely fun and satisfying.Though there are quite a few
 things that could have been improved given time.Such as weighting

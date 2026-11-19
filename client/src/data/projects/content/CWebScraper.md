@@ -1,8 +1,8 @@
-### Description
+# Description
 
 The purpose of this project is to write a web scraper in C for the joy of writing a web scraper in C. It currently uses [cURL](<https://github.com/curl/curl>), [libxml2](<https://github.com/GNOME/libxml2>), and [Google's robotstxt](<https://github.com/google/robotstxt>) (which is where C++ comes in).
 
-### Challenges
+# Challenges
 
 Writing a web scraper has four basic challenges:
 
@@ -15,7 +15,7 @@ However, web scraping faces some challenges with point number one, as many websi
 
 Here, I want to experiment with the [curl-impersonate](<https://github.com/lexiforest/curl-impersonate>) repository, as it can impersonate web browsers.
 
-### Current Outlook
+# Current Outlook
 
 The project is going strong. I have completed points 1 and 3, and I am now working on point 2.
 

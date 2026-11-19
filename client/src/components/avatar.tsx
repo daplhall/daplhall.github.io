@@ -24,23 +24,20 @@ function BuisnessCard({ card, className }: { card: Card, className?: string }) {
 
 function Socials({ linkicons }: { linkicons: IconLink[] }) {
     return (
-        <div className="flex flex-evenly flex-align-center flex-row" >
+        <div className="icon-links" >
             {
                 linkicons.map((linkicon) =>
-                    <Fragment key={linkicon.link.text}>
-                        <div className="text-center">
-                            <a className="nav-link" href={linkicon.link.src}
-                                target="_blank" >
-                                <img
-                                    className="icon"
-                                    src={linkicon.icon.src}
-                                    alt={linkicon.icon.alt}
-                                />
-                                <br />
-                                {linkicon.link.text}
-                            </a>
-                        </div>
-                    </Fragment>
+		    <a className="icon-link" href={linkicon.link.src} key={linkicon.link.text}
+			target="_blank" >
+			<img
+				className="icon"
+				src={linkicon.icon.src}
+				alt={linkicon.icon.alt}
+			/>
+			<p>
+				{linkicon.link.text}
+			</p>
+		    </a>
                 )
             }
         </ div >
