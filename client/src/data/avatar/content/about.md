@@ -6,10 +6,10 @@ Beyond my professional work, I'm a coding enthusiast who enjoys exploring new te
 
 ---
 
-**Professional interests:** Algorithm design, High performance computing (HPC), Numerical methods, Parallel computing
+**Professional interests:** Algorithm design · High performance computing (HPC) · Numerical methods, Parallel computing
 
 ---
 
-**Personal Interest:** Game design for roleplaying games, HPC, Numerical Methods
+**Personal Interest:** Game design for roleplaying games · HPC · Numerical Methods
 
 ---
