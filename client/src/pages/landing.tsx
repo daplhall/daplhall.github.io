@@ -7,7 +7,6 @@ import { Daniel } from "@data/avatar/base"
 export default function About() {
     return (
         <>
-            <Navbar />
             <div className="container center flex flex-center flex-align-center" style={{ marginTop: "24px" }}>
                 <Avatar avatar={Daniel} />
             </div >
