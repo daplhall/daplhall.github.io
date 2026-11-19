@@ -49,7 +49,7 @@ export const Daniel = {
             icon: Icons.Docs,
             link: {
                 text: "Resume",
-                src: "pdf/DanielHallCV.pdf"
+                src: "pdf/CV-1.pdf"
             }
         },
     ],
